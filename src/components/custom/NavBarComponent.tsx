@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Protest_Revolution } from "next/font/google";
 import Link from "next/link";
-import { BackgroundBeams } from "../ui/background-beams";
+// import { BackgroundBeams } from "../ui/background-beams";
 
 const protestRevolution = Protest_Revolution({
   subsets: ["latin"],
@@ -30,7 +30,7 @@ function NavBarComponent() {
       <nav className="ml-auto borde mr-2 flex text-gray-500 text-[13px] md:text-[20px] font- sel-end self-center">
         <ul className="flex space-x-4">
           <li>
-            <Link href="/" className=" relative z-2">Home</Link>
+            <Link href="/" className=" relative z-2 text-[#FC0000] underline underline-offset-4">Home</Link>
           </li>
           <li>
             <Link href="/book" >Book</Link>
@@ -43,7 +43,7 @@ function NavBarComponent() {
           </li>
         </ul>
       </nav>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </div>
   );
 }
